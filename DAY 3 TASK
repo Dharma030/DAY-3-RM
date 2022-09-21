@@ -1,0 +1,195 @@
+FOR THE GIVEN JSON ITERATE OVER ALL FOR LOOPS(FOR,FOR IN)
+
+The ‘For’ Loop
+
+The For Loop comes first because of its simplicity and ease of use. It is a very user-friendly kind of loop that runs with a method of using a counter. 
+
+The value is first set with an appropriate condition, which is also called ‘initializing a loop’. Next, the terminal or final value is specified. The For Loop makes things really easy when you need to run a set of codes multiple times.
+
+The For Loop is further divided into:‍
+
+1. Using an array
+The following piece of code is a perfect example of how to use a for loop through an array. 
+
+{% code-block language="js" %}
+var numbers = [ 10, 20, 30, 40, 50] 
+for (var i=0; i < numbers.length; i++) {
+   console.log(numbers[i])
+}
+‍{% code-block-end %}
+Here, I have used all the numbers in the form of an array, then printed each of them in a console window. In the same way, you can make a loop through an array of strings
+
+The ‘For In’ Loop
+
+
+Another way of looping is the For In Loop. Unlike the For Loop, this loop won’t be using a counter. So this makes the whole process even more simple and hassle-free. In fact, the For In Loop is essentially a simplified version of the For Loop.
+
+The following are different ways of looping using the For In technique.
+
+1. Looping through an Object Property
+Here’s an example; you’ve got an object containing some properties and you need to look up each property and the value that it carries. Here’s how you would use the For In Loop to do so:
+{% code-block language="js" %}
+var person = {
+   fname: "Nick",
+   lname: "Jonas",
+   age: 26
+}; 
+for (let x in person) {
+   console.log(x + ": "+ person[x])
+}
+‍{% code-block-end %}
+
+
+CREAT YOUR OWN RESUME DAT IN JSON FORMAT
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create your own resume data in JSON format
+    </h1>
+    <script src="script.js"></script>
+</body>
+</html>
+
+JS CODE:
+
+
+let myResume={
+    "basics": {
+      "name": "DHARMA T",
+      "email": "borntowindharma@gmail.com",
+      "phone": 9578741769,
+      "degree": "B.E",
+      "location": {
+        "address": "15/16 Sainath Enclave ShenoyNagar",
+        "postalCode": 600030,
+        "city": "Chennai",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/rajarajan-t-685958219/",
+          "github":"https://github.com/RAJARAJAN-RT"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "The Photophilehub PVT",
+        "position": "Business Executive",
+        "startDate": "2020-11-04",
+        "endDate": "2021-08-15",
+        "summary": "i am the business executive handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "Thiagarajar College Of Engineering",
+        "department": "Mechatronics",
+        "studyType": "fulltime",
+        "batch start year": 2015,
+        "batch end year": 2019,
+        "gpa": 7.5,
+      }
+    ],
+    "skills": [
+      {
+        "name": "python,javascript",
+        "level": "beginer",
+        "project": [
+          "automatic attendance maintaing system using python language"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
+  }
+  console.log(myResume);
+
+READ ABOUT THE DIFFERENCE BETWEEN WINDOW,SCREEN AND DOCUMENT IN JAVA SCRIPT 
+
+window
+Each browser tab has its own top-level window object. Each <iframe> 
+(and deprecated <frame>)
+ element has its own window object too, nested within a parent window. 
+Each of these windows gets its own separate global object. 
+window.window always refers to window, but window.parent and window.
+top might refer to enclosing windows, giving access to other execution 
+contexts. In addition to document and screen described below, window 
+properties include
+
+setTimeout() and setInterval() binding event handlers to a timer
+location giving the current URL
+history with methods back() and forward() giving the tab's mutable history
+navigator describing the browser software
+document
+Each window object has a document object to be rendered. These 
+objects get confused in part because HTML elements are added 
+to the global object when assigned a unique id. E.g., in the HTML snippet
+
+<body>
+  <p id="holyCow"> This is the first paragraph.</p>
+</body>
+the paragraph element can be referenced by any of the following:
+
+window.holyCow or window["holyCow"]
+document.getElementById("holyCow")
+document.querySelector("#holyCow")
+document.body.firstChild
+document.body.children[0]
+screen
+The window object also has a screen object with properties 
+describing the physical display:
+
+screen properties width and height are the full screen
+
+screen properties availWidth and availHeight omit the toolbar
+
+The portion of a screen displaying the rendered document is
+ the viewport in JavaScript, which is potentially confusing 
+because we call an application's portion of the screen a window 
+when talking about interactions with the operating system. 
+The getBoundingClientRect() method of any document element 
+will return an object with top, left, bottom, and right properties 
+describing the location of the element in the viewport
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
